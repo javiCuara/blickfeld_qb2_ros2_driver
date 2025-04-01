@@ -46,7 +46,7 @@ if(BUILD_DEPLOYED_PROTOCOL)
   include(FetchContent)
   FetchContent_Declare(blickfeld-qb2
     GIT_REPOSITORY https://github.com/Blickfeld/blickfeld-qb2.git
-    GIT_TAG main)
+    GIT_TAG v2.1)
   FetchContent_MakeAvailable(blickfeld-qb2)
   set(blickfeld-protocol blickfeld-qb2)
 else()
@@ -152,6 +152,13 @@ install(
 
 # Install launch files
 install(DIRECTORY launch DESTINATION share/${PROJECT_NAME})
+
+# Install config files
+install (
+  DIRECTORY config
+  DESTINATION share/${PROJECT_NAME}
+  FILES_MATCHING PATTERN "*.yaml"
+)
 
 # Testing
 if(BUILD_TESTS)
