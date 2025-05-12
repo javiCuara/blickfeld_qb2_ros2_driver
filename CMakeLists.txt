@@ -46,7 +46,7 @@ if(BUILD_DEPLOYED_PROTOCOL)
   include(FetchContent)
   FetchContent_Declare(blickfeld-qb2
     GIT_REPOSITORY https://github.com/Blickfeld/blickfeld-qb2.git
-    GIT_TAG v2.1)
+    GIT_TAG v2.1) # using version 2.1 instead of main branch of blickfeld-qb2 repo
   FetchContent_MakeAvailable(blickfeld-qb2)
   set(blickfeld-protocol blickfeld-qb2)
 else()

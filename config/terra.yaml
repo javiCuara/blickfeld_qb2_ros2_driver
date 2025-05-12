@@ -3,7 +3,7 @@ blickfeld_qb2_driver:
     fqdn: "192.168.1.2"
     serial_number: "EDM7OBIAA"
     application_key: "5deb6e69ee3161feXfrbOwF3a7jCkOFg"
-    frame_id: "lidar"
+    frame_id: "lidar_link"
     point_cloud_topic: "/bf/points_raw"
     use_measurement_timestamp: false
     publish_intensity: true
